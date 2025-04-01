@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tvv</title>
+    <link rel="stylesheet" href="style/clock.css">
+    <script src="./scripts/clock.js" defer></script>
+    <script src="./scripts/colorOptions.js" defer></script>
+</head>
+<body>
+    <h1>Kell</h1>
+    <div id="clock"></div>
+    <div id="date"></div>
+    <div id="controls">
+        <label for="timeFormat">Vali formaadi tüüp: </label>
+        <select id="timeFormat">
+            <option value="12">12-tunnine formaat</option>
+            <option value="24">24-tunnine formaat</option>
+        </select>
+
+        <label for="clockColor">Vali kellavärv: </label>
+        <select id="clockColor">
+            <option value="#D36135">Flame</option>
+            <option value="#FCB5B5">Melon</option>
+            <option value="#F87060">Bittersweet</option>
+            <option value="#372772">Midnight Blue</option>
+            <option value="#FFFFFF">White</option>
+        </select>
+
+        <label for="bgColor">Vali tausta värv: </label>
+        <select id="bgColor">
+            <option value="#282B28">Jet</option>
+            <option value="#FCDDF2">Mimi Pink</option>
+            <option value="#102542">Oxford Blue</option>
+            <option value="#3A2449">DarK Purple</option>
+            <option value="#00171F">Rich Black</option>
+        </select>
+
+        <label for="changeLocation">Ajatsooni vahetus: </label>
+        <select id="changeLocation">
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">Ameerika (New York)</option>
+            <option value="Europe/Tallinn">Euroopa (Tallinn)</option>
+            <option value="Asia/Tokyo">Aasia (Tokyo)</option>
+            <option value="Australia/Sydney">Austraalia (Sydney)</option>
+        </select>
+
+        <label for="showTimeSpent">Vaata kaua oled kella vaadanud: </label>
+        <button id="showTimeSpent">Näita aega</button>
+
+        <label for="toggleClock">Lülita kell sisse/välja: </label>
+        <select id="toggleClock">
+            <option value="show">Sees</option>
+            <option value="hide">Väljas</option>
+        </select>
+    </div>
+
+    <footer>
+        <p>Autor : Taavet-Valter Varkki</p>
+        <p>Repositooriumile saab <a href="https://github.com/tvv00000/1kodutoo" target="_blank">siit</a>.</p>
+    </footer>
+</body>
+</html>
